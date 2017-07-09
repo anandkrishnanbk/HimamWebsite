@@ -1,0 +1,262 @@
+body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+}
+h1{
+  text-align:center;
+  margin:0 0 44px 0;
+}
+h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;
+    font-size: 1.25em;
+    font-weight:700;
+    color: #111;
+}
+p{
+  text-align: left;
+}
+hr.top-space {
+    margin: 44px 0 44px 0;
+}
+
+hr.bottom-space
+{
+  margin: 44px 0 74px 0;
+}
+
+hr{
+background-image: -webkit-linear-gradient(left,transparent,rgba(0,0,0,0.2),transparent);
+    background-image: linear-gradient(to right,transparent,rgba(0,0,0,0.2),transparent);
+    border: 0;
+    height: 1px;
+    margin: 22px 0 22px 0;
+  }
+.top-container
+{
+  min-height: 24px;
+  margin:10px;
+}
+article
+{
+  margin-top:30px;
+}
+.align-right
+{
+  padding-left:20px;
+  padding-right:20px;
+
+}
+.align-right a
+{
+  float:right;
+  opacity: .4;
+}
+.align-right a:hover{
+  opacity:.8;
+}
+.align-right i
+{
+  font-size: 1.5em;
+  color: #2d2d30;
+
+  padding-left:10px;
+  padding-right:10px;
+}
+.container {
+    padding: 40px 40px 10px 40px;
+}
+
+.person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+}
+
+.person:hover {
+    border-color: #f1f1f1;
+}
+
+.carousel-inner img {
+    /*-webkit-filter: grayscale(90%);
+  filter: grayscale(90%);*/ /* make all photos black and white */
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+
+.carousel-caption h3 {
+    color: #fff !important;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+}
+
+.bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+}
+
+    .bg-1 h3 {
+        color: #fff;
+    }
+
+    .bg-1 p {
+        font-style: italic;
+    }
+
+.list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+.navbar
+{
+  border-radius:0;
+}
+.thumbnail p {
+    margin-top: 15px;
+    color: #555;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+}
+
+    .btn:hover, .btn:focus {
+        border: 1px solid #333;
+        background-color: #fff;
+        color: #000;
+    }
+
+.modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+.modal-header, .modal-body {
+    padding: 40px 50px;
+}
+.modal-head, h4, .close {
+    background-color: #b3b3b3;
+    color: #f2f2f2 !important;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 10px
+}
+
+.nav-tabs li a {
+    color: #777;
+}
+
+#googleMap {
+    width: 100%;
+    height: 400px;
+    //-webkit-filter: grayscale(100%);
+    //filter: grayscale(100%);
+}
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #DE8113;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+
+    .navbar li a, .navbar .navbar-brand {
+        color: #d5d5d5 !important;
+    }
+
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+}
+
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+    .dropdown-menu li a:hover {
+        background-color: red !important;
+    }
+
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    right: 0;
+    bottom: 0;
+    display:block;
+    font:5px
+}
+footer div a{
+  font-size:.9em;
+}
+footer div .copyright p
+{
+  margin-top:20px;
+  color:dimgray;
+}
+footer i.fa-map-marker, footer i.fa-envelope, footer i.fa-phone
+{
+  font-size: 1.25em;
+  color: dimgray;
+  display:block;
+  float:left;
+  margin:8px;
+  position: relative;
+  top: -4px;
+}
+footer a {
+    text-decoration:none;
+    display:block;
+    color: #f5f5f5;
+}
+
+footer a:hover {
+  color:#f5f5f5;
+    text-decoration:underline;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+textarea {
+    resize: none;
+}
