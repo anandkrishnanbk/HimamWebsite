@@ -11,8 +11,12 @@
     <link href="../css/himam.css" rel="stylesheet">
     <script src="../libs/js/jquery-3.2.1.min.js"></script>
     <script src="../libs/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="../js/himam.js"></script>
+
 </head>
 <body id="myPage">
+
+
   <div class="top-container">
     <div class="align-right">
       <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
@@ -44,51 +48,38 @@
             </div>
         </div>
     </nav>
-    <div>
-        <div class="left1">
+  <div class="photo-gallery container">
+  <div class="row">
+    <h2>CHINGAPULARI - 2017</h2>
+      <div class="row">
+          <div class="column">
+              <img src="../images/pookalam.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+      </div>
 
-            <div id="contact" class="container">
-                <h3 class="text-center">Contact Us</h3>
-                <!-- <p class="text-center"><em>We want to hear from you</em></p> -->
+      <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
 
-                <div class="row">
-                    <div class="note col-md-4">
-                        <!-- <p>Want a drop a note.</p> -->
-                        <p><span class="glyphicon glyphicon-map-marker"></span>Morrisville, NC 27560, USA</p>
-                        <p><span class="glyphicon glyphicon-envelope"></span>Email: himamnc@gmail.com</p>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-sm-6 form-group">
-                                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                            </div>
-                            <div class="col-sm-6 form-group">
-                                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                            </div>
-                        </div>
-                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-                        <br>
-                        <div class="row">
-                            <div class="col-md-12 form-group">
-                                <button class="btn pull-right" type="submit">Send</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-            </div>
-            <div>
+              <div class="mySlides">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="../images/pookalam.png" style="width:100%">
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-            </div>
-            <div>
+              <div class="caption-container">
+                  <p id="caption"></p>
+              </div>
 
-            </div>
-            <div>
-
-            </div>
-
-            <div></div>
-            <hr class="bottom-space">
+              <div class="column">
+                  <img src="../images/pookalam.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<hr class="gallery-space">
       <footer>
             <div class="container">
               <div class="row">
@@ -96,7 +87,7 @@
                    <h5>CONTACT US</h5>
                    <p><i class="fa fa-map-marker" aria-hidden="true"></i><a>Hindu Malayalee Mandalam of Carolinas,<br><span style="margin-left:25px;">P.O. Box 1122,</span><br><span style="margin-left:25px;">Morrisville, NC 27560</span></a></p>
                    <p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:himamnc@gmail.com">Email: himamnc@gmail.com</a></p>
-                   <!-- <p><i class="fa fa-phone" aria-hidden="true"></i><a>(242)-344-5656</a></p> -->
+                   <!-- <p><i class="fa fa-phone" aria-hidden="true"></i><a>(242)-344-5656</a></p>  -->
                 </div>
                 <div class="col-md-3 col-lg-3 col-sm-12">
                   <h5>QUICK LINKS</h5>
@@ -117,5 +108,8 @@
                 </div>
             </div>
       </footer>
+
+
+
 </body>
 </html>

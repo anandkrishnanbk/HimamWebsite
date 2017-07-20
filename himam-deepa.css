@@ -1,5 +1,5 @@
 body {
-  background-color: #fff9e4;
+  background-color: #fffefc;
     font: 400 15px/1.8 Lato, sans-serif;
     color: black;
 }
@@ -9,25 +9,14 @@ h1{
   color: #A45627;
 }
 h3, h4 {
-    margin: 10px 0;
+    margin: 10px 0 30px 0;
     letter-spacing: 10px;
     font-size: 1.25em;
     font-weight:700;
     color: #d07e00;
 }
-.main-gallery h3, h4
-{
-  margin: 30px 0;
-}
-
-.tour h3, h4
-{
-  margin: 30px 0;
-}
-
 p{
   text-align: left;
-  font-style: normal;
 }
 hr.top-space {
     margin: 44px 0 44px 0;
@@ -56,15 +45,13 @@ hr{
 }
 article
 {
-  background-color:#fff;
-  padding:20px;
   margin-top:30px;
 }
 #contact p.text-center
 {
   color: #d07e00;
 }
-.tour ul.list-group
+#tour ul.list-group
 {
   margin-right: 80px;
 }
@@ -127,7 +114,6 @@ article
 .bg-1 {
     background: #F0E6C3;
     color: #d07e00;
-    padding:10px 40px;
 }
 
     .bg-1 h3 {
@@ -135,7 +121,7 @@ article
     }
 
     .bg-1 p {
-        font-style: italic;
+        font-style;
     }
 
 .list-group-item:first-child {
@@ -178,15 +164,6 @@ article
   background: none;
   margin: 44px 0 74px 0;
 }
-.panel-group .panel-body img
-{
-  padding-bottom:25px;
-  font-style: normal;
-}
-.panel-group .panel-body p{
-  font-style: normal;
-}
-
 /* CONTACTS PAGE*/
 .note
 {
@@ -248,9 +225,9 @@ article
     opacity: 0.9;
 }
 
-.navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-}
+    .navbar li a, .navbar .navbar-brand {
+        color: #fff !important;
+    }
 
 .navbar-nav li a:hover {
     background-color: #e67200 !important;
@@ -275,35 +252,9 @@ article
     color: #000 !important;
 }
 
-.dropdown-menu li a:hover {
-    background-color: red !important;
-}
-
-.tour .panel .panel-body img
-{
-  max-width: 100px;
-  max-height:80px;
-}
-
-.main-gallery .panel .panel-body img
-{
-  max-width: 128px;
-  max-height:128px;
-}
-.main-gallery .panel .panel-body div:nth-child(2)
-{
-  padding-left:56px;
-}
-.panel .panel-heading a
-{
-  color: #333;
-  text-decoration: none;
-}
-.event-container .panel .panel-body img
-{
-  max-width: 250px !important;
-  max-height:150px !important;
-}
+    .dropdown-menu li a:hover {
+        background-color: red !important;
+    }
 /** FOOTER */
 footer {
     /*background-color: #2d2d30;*/
@@ -355,9 +306,10 @@ footer a:hover {
 textarea {
     resize: none;
 }
+
 p{
 	font-size: 14px,sans-serif;
-
+	
 	}
 h5{
   font-size: 18px ,sans-serif;

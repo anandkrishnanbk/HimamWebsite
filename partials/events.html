@@ -11,8 +11,16 @@
     <link href="../css/himam.css" rel="stylesheet">
     <script src="../libs/js/jquery-3.2.1.min.js"></script>
     <script src="../libs/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="../css/jquery.e-calendar.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../js/jquery.e-calendar.js"></script>
+
+    <script type="text/javascript" src="../js/jquery.e-calendar.js"></script>
 </head>
 <body id="myPage">
+
   <div class="top-container">
     <div class="align-right">
       <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
@@ -35,9 +43,9 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="../himam.html" class="active"><span>Home</span></a></li>
-                    <li><a href="../partials/gallery.html"><span>Gallery </span></a></li>
+                    <li><a href="../partials/main-gallery.html"><span>Gallery </span></a></li>
                     <!-- <li><a href="../partials/services.html"><span>About Us</span></a></li> -->
-                    <li><a href="../partials/events.html"><span>Events </span></a></li>
+                    <li><a href="../partials/main-events.html"><span>Events </span></a></li>
                     <li><a href="../partials/contact.html"><span>Contact Us</span></a></li>
                     <li><a href="" class="active"><span>Login</span></a></li>
                 </ul>
@@ -45,17 +53,87 @@
         </div>
     </nav>
       <div class="container">
-            <div id="tour" class="bg-1">
-                <div class="container">
+            <div class="tour event-container bg-1">
                     <h3 class="text-center">Events</h3>
                     <!-- <p class="text-center">Please find the events</p> -->
-                    <ul class="list-group">
-                        <li class="list-group-item">ChingaPulari </li>
-                        <li class="list-group-item">Vidhyarambhan</li>
-                        <li class="list-group-item">Ramayanamasam</span></li>
-                        <li class="list-group-item">Vishu</li>
-                    </ul>
-                </div>
+                          <!-- <ul class="list-group">
+                            <li class="list-group-item">
+                                <h5>Ramayana Paarayanam</h5>
+                                <img src="../images/Ramayanam.jpg" alt="picture" width="230" height="150" />
+                                <p>
+                                    Himam is celeberating Ramayanaparayanam from July 17 and ends on August 16
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+
+                                <img src="../images/onam_pic.jpg" alt="picture" width="230" height="150" />
+                                <h5>Chingapulari</h5>
+                                <p>
+                                    Himam celebrating Onam on August 26th Green Hope High school
+                                </p>
+
+                            </li>
+                            <li class="list-group-item">
+                                <img src="../images/Navarathri.jpg" alt="picture" width="230" height="150" /><br />navarathri<br>
+                                <h5>Navarathri Pooja</h5>
+                                <p>
+                                    Himam celebrating Navarathri on Sepetember
+                                </p>
+                            </li>
+
+                            <li class="list-group-item">
+                                <img src="../images/vishu_new.jpg" alt="picture" width="230" height="150" />
+                                <h5>Vishu</h5>
+                                <p>
+                                    Himam is Celeberating Vishu On April 15th
+                                </p>
+                            </li>
+                        </ul> -->
+                        <div class="panel-group">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              VISHU
+                            </div>
+                            <div class="panel-body">
+                              <img src="../images/vishu_new.jpg" class="img-responsive" alt="onam" />
+                              <p>
+                                SATURDAY, APRIL 15 FROM 6:00 PM TO 9:30 PM
+                              </p>
+                              <p>
+                                VENUE : HSNC Temple Main Hall,
+                                      309 Aviation Parkway,
+                                      Morrisville, NC 27560
+                              </p>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              RAMAYANA PARAYANAM
+                            </div>
+                            <div class="panel-body">
+                              <img src="../images/ramayanam.png" class="img-responsive" alt="ramayanam" />
+                              <p>
+                                  STARTS FROM MONDAY, JULY 17 AND ENDS ON WEDNESDAY, AUGUST 16
+                              </p>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              CHINGAPULARI
+                            </div>
+                            <div class="panel-body">
+                              <img src="../images/pookalam.png" class="img-responsive" alt="onam" />
+                              <p>
+                                SATURDAY, AUGUST 26 FROM 5:00 PM TO 9:30 PM
+                              </p>
+                              <p>
+                                VENUE : Green Hope High School Cafeteria,
+                                2500 Carpenter Upchurch Road,
+                                Cary, NC 27519
+                              </p>
+                            </div>
+                          </div>
+                        </div>
             </div>
         </div>
 <hr class="bottom-space">

@@ -12,8 +12,11 @@
     <script src="../libs/js/jquery-3.2.1.min.js"></script>
     <script src="../libs/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
     <script src="../js/himam.js"></script>
+
 </head>
 <body id="myPage">
+
+
   <div class="top-container">
     <div class="align-right">
       <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
@@ -36,9 +39,9 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="../himam.html" class="active"><span>Home</span></a></li>
-                    <li><a href="../partials/gallery.html"><span>Gallery </span></a></li>
+                    <li><a href="../partials/main-gallery.html"><span>Gallery </span></a></li>
                     <!-- <li><a href="../partials/services.html"><span>About Us</span></a></li> -->
-                    <li><a href="../partials/events.html"><span>Events </span></a></li>
+                    <li><a href="../partials/main-events.html"><span>Events </span></a></li>
                     <li><a href="../partials/contact.html"><span>Contact Us</span></a></li>
                     <li><a href="" class="active"><span>Login</span></a></li>
                 </ul>
@@ -47,40 +50,68 @@
     </nav>
   <div class="photo-gallery container">
   <div class="row">
-    <h2>Photo Gallery - Year 2017</h2>
-    <hr class="gallery-space">
-    <div class="row">
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 1"><img src="//placehold.it/600x350" class="thumbnail img-responsive"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 2"><img src="//placehold.it/600x350/2255EE" class="thumbnail img-responsive"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 3"><img src="//placehold.it/600x350/449955/FFF" class="thumbnail img-responsive"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 4"><img src="//placehold.it/600x350/992233" class="thumbnail img-responsive"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 5"><img src="//placehold.it/600x350/2255EE" class="thumbnail img-responsive"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 6"><img src="//placehold.it/600x350/449955/FFF" class="thumbnail img-responsive"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 8"><img src="//placehold.it/600x350/777" class="thumbnail img-responsive"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 9"><img src="//placehold.it/600x350/992233" class="thumbnail img-responsive"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 10"><img src="//placehold.it/600x350/EEE" class="thumbnail img-responsive"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 11"><img src="//placehold.it/600x350/449955/FFF" class="thumbnail img-responsive"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 12"><img src="//placehold.it/600x350/DDD" class="thumbnail img-responsive"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 13"><img src="//placehold.it/600x350/992233" class="thumbnail img-responsive"></a></div>
-    </div>
-  </div>
-</div>
-<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-  <div class="modal-content">
-	<div class="modal-header">
-		<button type="button" class="close" data-dismiss="modal">×</button>
-		<h3 class="modal-title">Heading</h3>
-	</div>
-	<div class="modal-body">
+    <h2>RAMAYANA MASAM - 2017</h2>
+      <div class="row">
+          <div class="column">
+              <img src="../images/Navarathri.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+              <img src="../images/vidhyarambham.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+              <img src="../images/Vidya1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+              <img src="../images/vidhyarambham.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+      </div>
 
-	</div>
-	<div class="modal-footer">
-		<button class="btn btn-default" data-dismiss="modal">Close</button>
-	</div>
-   </div>
-  </div>
-</div>
+      <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+              <div class="mySlides">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="../images/Navarathri.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="../images/vidhyarambham.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="../images/Vidya1.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="../images/Navarathri.jpg" style="width:100%">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <div class="caption-container">
+                  <p id="caption"></p>
+              </div>
+
+              <div class="column">
+                  <img src="../images/Navarathri.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                  <img src="../images/vidhyarambham.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                  <img src="../images/Vidya1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                  <img src="../images/Navarathri.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+          </div>
+      </div>
+ </div>
 </div>
 <hr class="gallery-space">
       <footer>
@@ -111,5 +142,8 @@
                 </div>
             </div>
       </footer>
+
+
+
 </body>
 </html>
