@@ -1,5 +1,5 @@
 body {
-  background-color: #fff9e4;
+  background-color: #fefdf7;
     font: 400 15px/1.8 Lato, sans-serif;
     color: black;
 }
@@ -10,7 +10,7 @@ h1{
 }
 h3, h4 {
     margin: 10px 0;
-    letter-spacing: 10px;
+    letter-spacing: 4px;
     font-size: 1.25em;
     font-weight:700;
     color: #d07e00;
@@ -28,6 +28,10 @@ h3, h4 {
 p{
   text-align: left;
   font-style: normal;
+}
+.padding36px
+{
+  padding-left: 36px;
 }
 hr.top-space {
     margin: 44px 0 44px 0;
@@ -192,11 +196,15 @@ article
 {
   color: #d07e00;
 }
+.mailtohimam a:hover,.mailtohimam a:visited,.mailtohimam a:active,.mailtohimam a:link
+{
+   color:#D07E22;
+}
 .btn {
     padding: 10px 20px;
     background-color: #DE8113;
     color: #f1f1f1;
-    border-radius: 0;
+    border-radius: 4px;
     transition: .2s;
 }
 
@@ -259,7 +267,7 @@ article
 
 .navbar-nav li.active a {
     color: #fff !important;
-    background-color: #29292c !important;
+    background-color: #e67200 !important;
 }
 
 .navbar-default .navbar-toggle {
@@ -284,7 +292,24 @@ article
   max-width: 100px;
   max-height:80px;
 }
-
+.calendarOfEvents
+{
+  position: relative;
+  top: 14px;
+}
+.calendarOfEvents a:hover, .calendarOfEvents a:visited,.calendarOfEvents a:active,.calendarOfEvents a:link
+{
+  color: #d07e00;
+}
+.mainGallery
+{
+  position: relative;
+  top: 34px;
+}
+.mainGallery a:hover, .mainGallery a:visited,.mainGallery a:active,.mainGallery a:link
+{
+  color: #d07e00;
+}
 .main-gallery .panel .panel-body img
 {
   max-width: 128px;
@@ -324,7 +349,7 @@ footer div a{
 }
 footer div .copyright p
 {
-  margin-top:20px;
+  font-size:12px;
   color:dimgray;
 }
 footer i.fa-map-marker, footer i.fa-envelope, footer i.fa-phone
@@ -348,6 +373,10 @@ footer a:hover {
     color: inherit;
 }
 
+footer .container{
+  padding: 0 40px 0 40px !important;
+}
+
 .form-control {
     border-radius: 0;
 }
@@ -369,7 +398,7 @@ font-weight: bold;
 }
 
 .row > .column {
-    padding: 0 8px;
+    padding: 8px 8px;
 }
 
 .row:after {
@@ -470,11 +499,6 @@ font-weight: bold;
     position: absolute;
     top: 0;
 }
-
-img {
-    margin-bottom: -4px;
-}
-
 .caption-container {
     text-align: center;
     background-color: black;

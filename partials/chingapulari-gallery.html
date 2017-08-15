@@ -11,7 +11,7 @@
     <link href="../css/himam.css" rel="stylesheet">
     <script src="../libs/js/jquery-3.2.1.min.js"></script>
     <script src="../libs/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
-    <script src="../js/himam.js"></script>
+    <script src="../js/chingapulari.js"></script>
 
 </head>
 <body id="myPage">
@@ -19,8 +19,8 @@
 
   <div class="top-container">
     <div class="align-right">
-      <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-       <a href="https://www.facebook.com/RTPHIMAM/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <!-- <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a> -->
+       <a href="https://www.facebook.com/groups/1865093743813082/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
      </div>
   </div>
     <nav class="navbar navbar-default navbar-default">
@@ -38,11 +38,11 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../himam.html" class="active"><span>Home</span></a></li>
-                    <li><a href="../partials/main-gallery.html"><span>Gallery </span></a></li>
+                    <li><a href="../index.html" class="active"><span>Home</span></a></li>
+                    <li class="active"><a href="../partials/main-gallery.html"><span>Gallery </span></a></li>
                     <!-- <li><a href="../partials/services.html"><span>About Us</span></a></li> -->
                     <li><a href="../partials/main-events.html"><span>Events </span></a></li>
-                    <li><a href="../partials/contact.html"><span>Contact Us</span></a></li>
+                    <li><a href="../partials/contact.php"><span>Contact Us</span></a></li>
                     <li><a href="" class="active"><span>Login</span></a></li>
                 </ul>
             </div>
@@ -52,18 +52,53 @@
   <div class="row">
     <h2>CHINGAPULARI - 2017</h2>
       <div class="row">
-          <div class="column">
-              <img src="../images/pookalam.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          <div class="col-xs-12 col-md-12 col-lg-12">
+              <h5>Pictures</h5>
+              <div class="row chingapulari-photos">
+              <!-- <img src="../images/onathappan.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"> -->
+            </div>
+          </div>
+        </div>
+          <div class="row">
+          <div class="col-xs-12 col-md-12 col-lg-12">
+            <div class="chingapulari-videos">
+              <!-- <h5>Videos</h5>
+                <video width="320" height="240" controls>
+           	     <source src="../videos/chingapularivideos-2017/KHNAThiruvathira.mp4" type="video/mp4">
+                  <source src="../videos/chingapularivideos-2017/KHNAThiruvathira.ogg" type="video/ogg">
+          	         Your browser does not support the video tag.
+      	        </video> -->
+            </div>
+          </div>
+        </div>
           </div>
       </div>
-
+      <!-- PHOTO MODAL -->
       <div id="myModal" class="modal">
           <span class="close cursor" onclick="closeModal()">&times;</span>
           <div class="modal-content">
+             <div class="chingapulari-slides">
+            </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+              <div class="caption-container">
+                  <p id="caption"></p>
+              </div>
+              <div class="chingapulari-columns">
+                <!-- <div class="column">
+                    <img src="../images/onathappan.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div> -->
+              </div>
+          </div>
+      </div>
+      <!-- VIDEO MODAL -->
+      <!-- <div id="videoModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
               <div class="mySlides">
                   <div class="numbertext">1 / 4</div>
-                  <img src="../images/pookalam.png" style="width:100%">
+                  <img src="../images/onathappan.jpg" style="width:100%">
               </div>
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -73,10 +108,10 @@
               </div>
 
               <div class="column">
-                  <img src="../images/pookalam.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                  <img src="../images/onathappan.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
               </div>
           </div>
-      </div>
+      </div> -->
     </div>
 </div>
 <hr class="gallery-space">
@@ -92,12 +127,12 @@
                 <div class="col-md-3 col-lg-3 col-sm-12">
                   <h5>QUICK LINKS</h5>
                   <a><i class="fa fa-caret-right" aria-hidden="true"></i> Latest  News</a>
-                  <a><i class="fa fa-caret-right" aria-hidden="true"></i> Calendar Events- Year 2017</a>
+                  <a href="../partials/main-events.html"><i class="fa fa-caret-right" aria-hidden="true"></i> Calendar of Events- Year 2017</a>
                 </div>
                 <div class="col-md-3 col-lg-3 col-sm-12">
                   <h5>FOLLOW US</h5>
-                  <a href="https://www.facebook.com/RTPHIMAM/"><i class="fa fa-caret-right" aria-hidden="true"></i> Facebook</a>
-                  <a><i class="fa fa-caret-right" aria-hidden="true"></i> YouTube</a>
+                  <a href="https://www.facebook.com/groups/1865093743813082/" target="_blank"><i class="fa fa-caret-right" aria-hidden="true"></i> Facebook</a>
+                  <!-- <a><i class="fa fa-caret-right" aria-hidden="true"></i> YouTube</a> -->
                 </div>
                 <div class="col-md-3 col-lg-3 col-sm-12">
                   <p></p>
