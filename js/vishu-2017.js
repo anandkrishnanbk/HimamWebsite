@@ -1,11 +1,18 @@
 $(document).ready(function() {
 var photofolder = "../images/Vishuimages-2017/";
-
 $.ajax({
     url : photofolder,
     success: function (data) {
         var num=0;
         var picLen = $(data).find("a").length - 1;
+        if(picLen === 1)
+        {
+            $(".vishuInitialSlides").append('<div class="alert alert-warning" role="alert">'+picLen+' picture is available in this gallery. Please click on the picture to see full view of picture.</div>');
+        }
+        else
+        {
+            $(".vishuInitialSlides").append('<div class="alert alert-warning" role="alert">'+picLen+' pictures are available in this gallery. Please click on the pictures to see full view of all pictures.</div>');
+        }
         $(data).find("a").attr("href", function (i, val) {
             if( val.match(/\.(jpe?g|JPG|jpg|png|gif)$/) ) {
                num++;
@@ -25,8 +32,10 @@ $.ajax({
                    "</div>");*/
             }
         });
+        $(".vishuInitialSlides").append('<a href="javascript:void(0);" onclick="openModal();currentSlide(1)" class="btn" role="button">More Pictures</a>');
     }
 });
+
 });
   function openModal() {
             document.getElementById('myModal').style.display = "block";

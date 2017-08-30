@@ -6,6 +6,14 @@ $.ajax({
     success: function (data) {
         var num=0;
         var picLen = $(data).find("a").length - 1;
+        if(picLen === 1)
+        {
+            $(".ramayanInitialSlides").append('<div class="alert alert-warning" role="alert">'+picLen+' picture is available in this gallery. Please click on the picture to see full view of picture.</div>');
+        }
+        else
+        {
+            $(".ramayanInitialSlides").append('<div class="alert alert-warning" role="alert">'+picLen+' pictures are available in this gallery. Please click on the pictures to see full view of all pictures.</div>');
+        }
         $(data).find("a").attr("href", function (i, val) {
             if( val.match(/\.(jpe?g|JPG|jpg|png|gif)$/) ) {
                num++;
@@ -25,6 +33,7 @@ $.ajax({
                    "</div>");*/
             }
         });
+        $(".ramayanInitialSlides").append('<a href="javascript:void(0);" onclick="openModal();currentSlide(1)" class="btn" role="button">More Pictures</a>');
     }
 });
 });
